@@ -10,13 +10,14 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=	claptrap
+NAME	=	scavtrap
 CXX		=	c++
 FLAG	=	-Wall -Werror -Wextra -std=c++98
 
 RM		=	rm -rf
 
-SRCS	=	ClapTrap.cpp
+SRCS	=	ClapTrap.cpp \
+			ScavTrap.cpp
 OBJS	=	$(SRCS:%.cpp=%.o)
 
 all: $(NAME)

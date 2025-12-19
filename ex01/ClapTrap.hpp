@@ -10,13 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CLAPTRAP_H
-# define CLAPTRAP_H
+#ifndef CLAPTRAP_HPP
+# define CLAPTRAP_HPP
 
 #include <string>
 
 class ClapTrap {
-    private:
+    protected:
         std::string name;
         unsigned hitPoint;
         unsigned enegyPoint;
@@ -25,7 +25,7 @@ class ClapTrap {
         ClapTrap(const std::string &name);
         ClapTrap(const ClapTrap &);
         ClapTrap &operator=(const ClapTrap &);
-        ~ClapTrap();
+        virtual ~ClapTrap();
         unsigned int getHitPoint() const;
         unsigned int getEnegyPoint() const;
         unsigned int getAttackDamage() const;
