@@ -16,7 +16,7 @@
 #include <string>
 
 class ClapTrap {
-    private:
+    protected:
         std::string name;
         unsigned hitPoint;
         unsigned enegyPoint;

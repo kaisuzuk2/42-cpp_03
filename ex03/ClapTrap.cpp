@@ -27,8 +27,7 @@ ClapTrap::ClapTrap(const ClapTrap &inst): name(inst.name), hitPoint(inst.getHitP
 
 
 ClapTrap &ClapTrap::operator=(const ClapTrap &rhs) {
-    if (this != &rhs)
-    {
+    if (this != &rhs) {
         this->name = rhs.name;
         this->hitPoint = rhs.hitPoint;
         this->enegyPoint = rhs.enegyPoint;
